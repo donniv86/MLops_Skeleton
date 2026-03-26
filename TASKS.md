@@ -12,7 +12,7 @@
 - [x] Made first commit with all project files
 - [x] Created a GitHub/GitLab remote repository
 - [x] Pushed local repo to remote (`git push -u origin main`)
-- [ ] Practiced creating a feature branch (`git checkout -b feature/my-branch`)
+- [x] Practiced creating a feature branch (`git checkout -b feature/my-branch`)
 - [ ] Opened and merged a Pull Request on GitHub
 
 ### 0.2 Python Environment
