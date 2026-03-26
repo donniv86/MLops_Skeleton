@@ -58,14 +58,14 @@
 
 ### Notebook: `02_feature_engineering.ipynb`
 - [x] Created feature engineering notebook
-- [ ] Loaded cleaned Parquet from Stage 1
-- [ ] Applied one-hot encoding to `sex` and `embarked`
-- [ ] Applied median scaling to numeric features (`age`, `fare`)
-- [ ] Created new interaction features (e.g. `family_size = sibsp + parch`)
-- [ ] Built a scikit-learn `Pipeline` combining all transformations
-- [ ] Verified Pipeline prevents train-test leakage (fit only on train split)
-- [ ] Saved the fitted Pipeline to `models/feature_pipeline.pkl`
-- [ ] Saved feature-engineered train/test splits to `data/processed/`
+- [x] Loaded cleaned Parquet from Stage 1
+- [x] Applied one-hot encoding to `sex` and `embarked`
+- [x] Applied median scaling to numeric features (`age`, `fare`)
+- [x] Created new interaction features (e.g. `family_size = sibsp + parch`)
+- [x] Built a scikit-learn `Pipeline` combining all transformations
+- [x] Verified Pipeline prevents train-test leakage (fit only on train split)
+- [x] Saved the fitted Pipeline to `models/feature_pipeline.pkl`
+- [x] Saved feature-engineered train/test splits to `data/processed/`
 
 ---
 
@@ -215,7 +215,7 @@
 | Milestone | Tasks Required | Status |
 |---|---|---|
 | **Environment Ready** | Stage 0 complete | 🔄 In Progress |
-| **Data Pipeline Complete** | Stages 1–2 complete | ⬜ Not Started |
+| **Data Pipeline Complete** | Stages 1–2 complete | ✅ Milestone Achieved |
 | **First Model Trained** | Stage 3 complete | ⬜ Not Started |
 | **Experiment Tracking Live** | Stage 5 complete | ⬜ Not Started |
 | **Model Serving Locally** | Stage 6 complete | ⬜ Not Started |
