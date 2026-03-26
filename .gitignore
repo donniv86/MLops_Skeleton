@@ -25,6 +25,10 @@ build/
 # ── Exercise / Tutorial Zip Files ───────────────────────────────────────────────
 Ex_Files_MLOps_Essentials_Model_Drift_Bias.zip
 
+# ── Personal Planning & Task Files ──────────────────────────────────────────────
+TASKS.md
+plan-mlopsEndToEndRoadmap.prompt.md
+
 # ── Data Files ──────────────────────────────────────────────────────────────────
 # Raw and processed data should NOT go into Git (often large / sensitive)
 data/raw/
@@ -90,3 +94,6 @@ logs/
 
 #
 Ex_Files_MLOps_Essentials_Model_Drift_Bias.zip
+
+TASKS.md
+plan-mlopsEndToEndRoadmap.prompt.md
