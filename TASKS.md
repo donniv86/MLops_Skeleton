@@ -72,15 +72,15 @@
 ## STAGE 3 — Model Training & Evaluation
 
 ### Notebook: `03_model_training.ipynb`
-- [ ] Created model training notebook
-- [ ] Trained a Logistic Regression baseline
-- [ ] Trained a Random Forest classifier
-- [ ] Evaluated both models: Accuracy, Precision, Recall, F1, AUC-ROC
-- [ ] Plotted Confusion Matrix for each model
-- [ ] Plotted ROC Curve comparing both models
-- [ ] Identified which metric matters most (class imbalance → prioritise Recall/F1)
-- [ ] Selected best model based on evaluation metrics
-- [ ] Saved best model to `models/titanic_model_v1.pkl`
+- [x] Created model training notebook
+- [x] Trained a Logistic Regression baseline
+- [x] Trained a Random Forest classifier
+- [x] Evaluated both models: Accuracy, Precision, Recall, F1, AUC-ROC
+- [x] Plotted Confusion Matrix for each model
+- [x] Plotted ROC Curve comparing both models
+- [x] Identified which metric matters most (class imbalance → prioritise Recall/F1)
+- [x] Selected best model based on evaluation metrics
+- [x] Saved best model to `models/titanic_model_v1.pkl`
 
 ---
 
@@ -216,7 +216,7 @@
 |---|---|---|
 | **Environment Ready** | Stage 0 complete | 🔄 In Progress |
 | **Data Pipeline Complete** | Stages 1–2 complete | ✅ Milestone Achieved |
-| **First Model Trained** | Stage 3 complete | ⬜ Not Started |
+| **First Model Trained** | Stage 3 complete | ✅ Milestone Achieved |
 | **Experiment Tracking Live** | Stage 5 complete | ⬜ Not Started |
 | **Model Serving Locally** | Stage 6 complete | ⬜ Not Started |
 | **Containerised** | Stage 7 complete | ⬜ Not Started |
