@@ -22,6 +22,9 @@ build/
 # Uncomment the next line to also ignore all notebook outputs (cell outputs)
 # *.ipynb
 
+# ── Exercise / Tutorial Zip Files ───────────────────────────────────────────────
+Ex_Files_MLOps_Essentials_Model_Drift_Bias.zip
+
 # ── Data Files ──────────────────────────────────────────────────────────────────
 # Raw and processed data should NOT go into Git (often large / sensitive)
 data/raw/
@@ -84,3 +87,6 @@ logs/
 # DVC cache is local only
 .dvc/cache/
 .dvc/tmp/
+
+#
+Ex_Files_MLOps_Essentials_Model_Drift_Bias.zip
