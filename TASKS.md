@@ -35,29 +35,29 @@
 
 ### Notebook: `01_data_ingestion.ipynb`
 - [x] Created data ingestion notebook
-- [ ] Ran notebook top-to-bottom without errors
-- [ ] Loaded `titanic` dataset via `seaborn.load_dataset()`
-- [ ] Inspected shape, dtypes, and column meanings
-- [ ] Plotted target variable distribution (class balance check)
-- [ ] Plotted numeric feature distributions
-- [ ] Plotted categorical feature frequencies
-- [ ] Plotted correlation heatmap
-- [ ] Ran missing value analysis and visualised with `missingno`
-- [ ] Checked for duplicate rows
-- [ ] Ran IQR outlier detection on all numeric columns
-- [ ] Applied data cleaning (drop ID cols, impute nulls)
-- [ ] Passed all 6 automated validation checks
-- [ ] Saved raw snapshot to `data/raw/titanic_raw.csv`
-- [ ] Saved cleaned data to `data/processed/titanic_clean.csv`
-- [ ] Saved cleaned data to `data/processed/titanic_clean.parquet`
-- [ ] Verified Parquet file reloads correctly
+- [x] Ran notebook top-to-bottom without errors
+- [x] Loaded `titanic` dataset via `seaborn.load_dataset()`
+- [x] Inspected shape, dtypes, and column meanings
+- [x] Plotted target variable distribution (class balance check)
+- [x] Plotted numeric feature distributions
+- [x] Plotted categorical feature frequencies
+- [x] Plotted correlation heatmap
+- [x] Ran missing value analysis and visualised with `missingno`
+- [x] Checked for duplicate rows
+- [x] Ran IQR outlier detection on all numeric columns
+- [x] Applied data cleaning (drop ID cols, impute nulls)
+- [x] Passed all 6 automated validation checks
+- [x] Saved raw snapshot to `data/raw/titanic_raw.csv`
+- [x] Saved cleaned data to `data/processed/titanic_clean.csv`
+- [x] Saved cleaned data to `data/processed/titanic_clean.parquet`
+- [x] Verified Parquet file reloads correctly
 
 ---
 
 ## STAGE 2 — Feature Engineering
 
 ### Notebook: `02_feature_engineering.ipynb`
-- [ ] Created feature engineering notebook
+- [x] Created feature engineering notebook
 - [ ] Loaded cleaned Parquet from Stage 1
 - [ ] Applied one-hot encoding to `sex` and `embarked`
 - [ ] Applied median scaling to numeric features (`age`, `fare`)
