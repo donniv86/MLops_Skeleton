@@ -5,6 +5,25 @@
 
 ---
 
+## Current Progress
+
+| Stage | Status | Notes |
+|---|---|---|
+| **Stage 0** — Git, Env, Structure | ✅ Complete | venv (Python 3.11), kernel registered, all folders created |
+| **Stage 1** — Data Ingestion | ✅ Complete | 891 rows, seaborn titanic, EDA + validation + Parquet export |
+| **Stage 2** — Feature Engineering | ✅ Complete | sklearn Pipeline, OHE + scaling, interaction features, leakage-free splits |
+| **Stage 3** — Model Training | ⬜ Not Started | |
+| **Stage 4** — Hyperparameter Tuning | ⬜ Not Started | |
+| **Stage 5** — Experiment Tracking | ⬜ Not Started | |
+| **Stage 6** — Model Serving | ⬜ Not Started | |
+| **Stage 7** — Docker | ⬜ Not Started | |
+| **Stage 8** — CI/CD | ⬜ Not Started | |
+| **Stage 9** — Drift Detection | ⬜ Not Started | |
+| **Stage 10** — Fairness Monitoring | ⬜ Not Started | |
+| **Stage 11** — Explainability | ⬜ Not Started | |
+
+---
+
 ## What Is This Project?
 
 Most university courses teach you how to *train* a model. Industry requires you to know how to *run* one — reliably, at scale, fairly, and safely — for months or years after it first launches.
@@ -25,7 +44,7 @@ This project covers that gap. You will build a complete end-to-end ML pipeline u
 MLops/
 │
 ├── notebooks/                          # Hands-on Jupyter notebooks (work through in order)
-│   ├── 01_data_ingestion.ipynb         # Stage 1 — Load & validate data from HuggingFace
+│   ├── 01_data_ingestion.ipynb         # Stage 1 — Load & validate data via seaborn
 │   ├── 02_feature_engineering.ipynb    # Stage 2 — Encode, scale, and transform features
 │   ├── 03_model_training.ipynb         # Stage 3 — Train, evaluate, compare models
 │   ├── 04_hyperparameter_tuning.ipynb  # Stage 4 — Optimise with Optuna
@@ -66,7 +85,7 @@ MLops/
 
 ## Datasets Used
 
-### 1. Titanic Survival Dataset (`mstz/titanic` — HuggingFace Hub)
+### 1. Titanic Survival Dataset (`seaborn.load_dataset('titanic')`)
 Used in Notebooks 1–5, 8.
 
 | Column | Description | Type |
@@ -81,6 +100,8 @@ Used in Notebooks 1–5, 8.
 | `embarked` | Port: C = Cherbourg, Q = Queenstown, S = Southampton | Categorical |
 
 **Why Titanic?** It has realistic data quality issues (missing values, class imbalance, potential gender bias, outliers) — all the same problems you will face in a real job.
+
+> **Note:** The dataset is loaded via `seaborn.load_dataset('titanic')` — a stable, script-free CSV source. The `mstz/titanic` HuggingFace dataset uses a legacy loading script incompatible with `datasets ≥ 2.16`.
 
 ---
 
@@ -183,7 +204,7 @@ jupyter notebook
 | # | Notebook / Task | Key Concepts Learned |
 |---|---|---|
 | 0 | Git setup, `.gitignore`, `requirements.txt` | Version control, reproducible environments |
-| 1 | `01_data_ingestion.ipynb` | HuggingFace Hub, EDA, missing values, data validation, Parquet |
+| 1 | `01_data_ingestion.ipynb` | seaborn dataset, EDA, missing values, data validation, Parquet |
 
 ---
 
