@@ -20,15 +20,14 @@
 - [x] Created `requirements.txt` with all project dependencies
 - [x] Installed core packages into `.venv`
 - [x] Registered `.venv` as a Jupyter kernel (`Python (MLOps .venv)`)
-- [ ] Verified all imports work in a notebook cell
 
 ### 0.3 Project Structure
 - [x] Created `notebooks/` directory
 - [x] Created `plan-mlopsEndToEndRoadmap.prompt.md`
-- [ ] Created `data/raw/` and `data/processed/` directories
-- [ ] Created `models/` directory for saved model artefacts
-- [ ] Created `src/` directory for reusable Python modules
-- [ ] Created `.env.example` file documenting required environment variables
+- [x] Created `data/raw/` and `data/processed/` directories
+- [x] Created `models/` directory for saved model artefacts
+- [x] Created `src/` directory for reusable Python modules
+- [x] Created `.env.example` file documenting required environment variables
 
 ---
 
@@ -37,7 +36,7 @@
 ### Notebook: `01_data_ingestion.ipynb`
 - [x] Created data ingestion notebook
 - [ ] Ran notebook top-to-bottom without errors
-- [ ] Loaded `mstz/titanic` dataset from HuggingFace Hub
+- [ ] Loaded `titanic` dataset via `seaborn.load_dataset()`
 - [ ] Inspected shape, dtypes, and column meanings
 - [ ] Plotted target variable distribution (class balance check)
 - [ ] Plotted numeric feature distributions
