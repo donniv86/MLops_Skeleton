@@ -9,9 +9,9 @@
 ### 0.1 Git & Version Control
 - [x] Initialised Git repository (`git init`)
 - [x] Created `.gitignore` (excludes `.venv/`, `data/`, `*.pkl`, `.env`, `__pycache__/`)
-- [ ] Made first commit with all project files
-- [ ] Created a GitHub/GitLab remote repository
-- [ ] Pushed local repo to remote (`git push -u origin main`)
+- [x] Made first commit with all project files
+- [x] Created a GitHub/GitLab remote repository
+- [x] Pushed local repo to remote (`git push -u origin main`)
 - [ ] Practiced creating a feature branch (`git checkout -b feature/my-branch`)
 - [ ] Opened and merged a Pull Request on GitHub
 
