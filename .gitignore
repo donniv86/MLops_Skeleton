@@ -1,0 +1,86 @@
+# ── Virtual Environments ────────────────────────────────────────────────────────
+.venv/
+venv/
+env/
+ENV/
+
+# ── Python ──────────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg
+*.egg-info/
+dist/
+build/
+*.whl
+.eggs/
+
+# ── Jupyter Notebooks ───────────────────────────────────────────────────────────
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/
+# Uncomment the next line to also ignore all notebook outputs (cell outputs)
+# *.ipynb
+
+# ── Data Files ──────────────────────────────────────────────────────────────────
+# Raw and processed data should NOT go into Git (often large / sensitive)
+data/raw/
+data/processed/
+data/external/
+*.parquet
+*.feather
+*.h5
+*.hdf5
+# Allow small CSV fixtures used in tutorials
+# !Ex_Files_MLOps_Essentials_Model_Drift_Bias/**/*.csv
+
+# ── ML Model Artefacts ──────────────────────────────────────────────────────────
+models/
+*.pkl
+*.pickle
+*.joblib
+*.onnx
+*.pt
+*.pth
+*.bin
+mlruns/          # MLflow local tracking directory
+wandb/           # Weights & Biases local run data
+
+# ── Secrets & Credentials ───────────────────────────────────────────────────────
+# NEVER commit secrets, API keys, or passwords
+.env
+.env.*
+!.env.example    # Allow a template showing which vars are needed
+*.pem
+*.key
+secrets/
+credentials/
+
+# ── OS & Editor Files ───────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.idea/
+.vscode/
+*.code-workspace
+
+# ── Test & Coverage ─────────────────────────────────────────────────────────────
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# ── Docker ──────────────────────────────────────────────────────────────────────
+# Keep Dockerfiles tracked, but ignore local build context leftovers
+*.dockerignore
+
+# ── Logs ────────────────────────────────────────────────────────────────────────
+logs/
+*.log
+*.out
+
+# ── DVC (Data Version Control) ──────────────────────────────────────────────────
+# DVC cache is local only
+.dvc/cache/
+.dvc/tmp/
