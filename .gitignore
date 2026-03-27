@@ -28,6 +28,7 @@ Ex_Files_MLOps_Essentials_Model_Drift_Bias.zip
 # ── Personal Planning & Task Files ──────────────────────────────────────────────
 TASKS.md
 plan-mlopsEndToEndRoadmap.prompt.md
+LEARNING_GUIDE.md
 
 # ── Data Files ──────────────────────────────────────────────────────────────────
 # Raw and processed data should NOT go into Git (often large / sensitive)
@@ -97,3 +98,8 @@ Ex_Files_MLOps_Essentials_Model_Drift_Bias.zip
 
 TASKS.md
 plan-mlopsEndToEndRoadmap.prompt.md
+
+Ex_Files_MLOps_Tools_MLflow_Hugging_Face.zip
+Ex_Files_MLOps_Tools_MLflow_Hugging_Face/
+
+mlflow.db
