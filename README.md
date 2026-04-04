@@ -12,10 +12,10 @@
 | **Stage 0** — Git, Env, Structure | ✅ Complete | venv (Python 3.11), kernel registered, all folders created |
 | **Stage 1** — Data Ingestion | ✅ Complete | 891 rows, seaborn titanic, EDA + validation + Parquet export |
 | **Stage 2** — Feature Engineering | ✅ Complete | sklearn Pipeline, OHE + scaling, interaction features, leakage-free splits |
-| **Stage 3** — Model Training | ⬜ Not Started | |
-| **Stage 4** — Hyperparameter Tuning | ⬜ Not Started | |
-| **Stage 5** — Experiment Tracking | ⬜ Not Started | |
-| **Stage 6** — Model Serving | ⬜ Not Started | |
+| **Stage 3** — Model Training | ✅ Complete | LR + RF compared; best model F1=0.797 saved as `titanic_model_v1.pkl` |
+| **Stage 4** — Hyperparameter Tuning | ✅ Complete | GridSearch + RandomizedSearch + Optuna; best model saved as `titanic_model_v2.pkl` |
+| **Stage 5** — Experiment Tracking | ✅ Complete | MLflow 3.10.1, runs logged, `@champion`/`@challenger` aliases set |
+| **Stage 6** — Model Serving | ✅ Complete | FastAPI + `lifespan` pattern; `/health`, `/ready`, `/predict`; 10 tests passing |
 | **Stage 7** — Docker | ⬜ Not Started | |
 | **Stage 8** — CI/CD | ⬜ Not Started | |
 | **Stage 9** — Drift Detection | ⬜ Not Started | |
@@ -61,9 +61,13 @@ MLops/
 │       ├── credit-approval-prod-data.csv
 │       └── credit-approval-fair-data.csv
 │
-├── src/                                # (Created in Stage 6) Reusable Python modules
+├── src/                                # Reusable Python modules
 │   └── api/
-│       └── main.py                     # FastAPI prediction service
+│       ├── config.py                   # pydantic-settings Settings class (env vars)
+│       └── main.py                     # FastAPI prediction service (lifespan + /predict)
+│
+├── tests/
+│   └── test_api.py                     # 10 pytest TestClient tests for Stage 6 API
 │
 ├── data/                               # Auto-created by notebooks — NOT tracked in Git
 │   ├── raw/                            # Original downloaded snapshots
@@ -337,7 +341,10 @@ Using a scikit-learn `Pipeline` prevents this automatically.
 | `datasets` | Load any dataset from HuggingFace Hub | Stage 1 |
 | `pyarrow` | Read/write Parquet files | Stage 1 |
 | `missingno` | Visualise missing data patterns | Stage 1 |
-| `mlflow` | Track experiments, register models | Stage 5 |
+| `mlflow` | Track experiments, register models, model aliases | Stage 5 |
+| `pydantic-settings` | Environment variable management for FastAPI | Stage 6 |
+| `loguru` | Structured JSON logging | Stage 6 |
+| `uvicorn` | ASGI server for FastAPI | Stage 6 |
 | `alibi-detect` | Detect data and concept drift | Stage 9 |
 | `scikit-lego` | Fairness metrics (equal opportunity score) | Stage 10 |
 | `shap` | Explain model predictions | Stage 11 |
@@ -373,11 +380,11 @@ See [TASKS.md](TASKS.md) for the full checklist of tasks to complete as you work
 
 | Milestone | Status |
 |---|---|
-| Environment Ready | 🔄 In Progress |
-| Data Pipeline Complete | ⬜ Not Started |
-| First Model Trained | ⬜ Not Started |
-| Experiment Tracking Live | ⬜ Not Started |
-| Model Serving Locally | ⬜ Not Started |
+| Environment Ready | ✅ Complete |
+| Data Pipeline Complete | ✅ Complete |
+| First Model Trained | ✅ Complete |
+| Experiment Tracking Live | ✅ Complete |
+| Model Serving Locally | ✅ Complete |
 | Containerised | ⬜ Not Started |
 | CI/CD Pipeline Active | ⬜ Not Started |
 | Monitoring Active | ⬜ Not Started |
